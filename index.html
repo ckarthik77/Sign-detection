@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Detection System | AI-Powered Traffic Sign Recognition</title>
+    <meta name="description" content="Revolutionary AI-powered traffic sign detection system with 95%+ accuracy. Real-time processing for autonomous vehicles and smart transportation.">
+    <meta name="keywords" content="AI, machine learning, traffic signs, computer vision, autonomous vehicles, deep learning">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🚦</text></svg>">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#" class="logo">
+                    <span class="logo-icon">🚦</span>
+                    SignDetect AI
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#tech">Technology</a></li>
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="cta-button">Get Started</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <h1>
+                        Revolutionary <span class="gradient-text">AI-Powered</span><br>
+                        Traffic Sign Detection
+                    </h1>
+                    <p>
+                        Transform transportation safety with our cutting-edge deep learning system. 
+                        Achieve 95%+ accuracy in real-time traffic sign recognition for autonomous 
+                        vehicles and smart city infrastructure.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#demo" class="btn-primary">
+                            <i class="fas fa-play"></i>
+                            Live Demo
+                        </a>
+                        <a href="#features" class="btn-secondary">
+                            <i class="fas fa-info-circle"></i>
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in">
+                    <div class="demo-container">
+                        <div class="demo-image">
+                            <i class="fas fa-camera"></i>
+                            <div class="floating-elements">
+                                <div class="floating-element">STOP - 98%</div>
+                                <div class="floating-element">50 km/h - 96%</div>
+                                <div class="floating-element">Turn Right - 94%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <span class="stat-number" data-target="95">0</span>
+                    <span class="stat-label">% Accuracy</span>
+                </div>
+                <div class="stat-item fade-in">
+                    <span class="stat-number" data-target="43">0</span>
+                    <span class="stat-label">Sign Categories</span>
+                </div>
+                <div class="stat-item fade-in">
+                    <span class="stat-number" data-target="120">0</span>
+                    <span class="stat-label">FPS Processing</span>
+                </div>
+                <div class="stat-item fade-in">
+                    <span class="stat-number" data-target="50000">0</span>
+                    <span class="stat-label">Training Images</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Cutting-Edge Features</h2>
+                <p>Discover the advanced capabilities that make our sign detection system the industry leader</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Advanced CNN Architecture</h3>
+                    <p>Custom-designed Convolutional Neural Network optimized for traffic sign recognition with state-of-the-art performance.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Real-Time Processing</h3>
+                    <p>Process video streams at 120+ FPS with ultra-low latency, perfect for autonomous vehicle applications.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Computer Vision Excellence</h3>
+                    <p>Advanced image preprocessing and feature extraction using OpenCV and custom algorithms for robust detection.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Cross-Platform Deployment</h3>
+                    <p>Deploy seamlessly across desktop, mobile, and edge devices with TensorFlow Lite optimization.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Robust Performance</h3>
+                    <p>Maintains high accuracy across various weather conditions, lighting scenarios, and viewing angles.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>Continuous Learning</h3>
+                    <p>Model can be retrained and updated with new data to improve performance and add new sign categories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="tech-stack" id="tech">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Technology Stack</h2>
+                <p>Built with industry-leading tools and frameworks for maximum performance and reliability</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item fade-in">
+                    <span class="tech-icon" style="color: #FF6F00;">🔥</span>
+                    <h4>TensorFlow</h4>
+                    <p>Deep learning framework</p>
+                </div>
+                <div class="tech-item fade-in">
+                    <span class="tech-icon" style="color: #5C3EE8;">👁️</span>
+                    <h4>OpenCV</h4>
+                    <p>Computer vision library</p>
+                </div>
+                <div class="tech-item fade-in">
+                    <span class="tech-icon" style="color: #3776AB;">🐍</span>
+                    <h4>Python</h4>
+                    <p>Programming language</p>
+                </div>
+                <div class="tech-item fade-in">
+                    <span class="tech-icon" style="color: #F37626;">📊</span>
+                    <h4>Jupyter</h4>
+                    <p>Development environment</p>
+                </div>
+                <div class="tech-item fade-in">
+                    <span class="tech-icon" style="color: #00D2FF;">⚡</span>
+                    <h4>CUDA</h4>
+                    <p>GPU acceleration</p>
+                </div>
+                <div class="tech-item fade-in">
+                    <span class="tech-icon" style="color: #4CAF50;">📱</span>
+                    <h4>TensorFlow Lite</h4>
+                    <p>Mobile deployment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="demo">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>Ready to Transform Transportation?</h2>
+                <p>Join the future of intelligent transportation systems. Experience the power of AI-driven traffic sign detection.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-primary" id="demoBtn">
+                        <i class="fas fa-rocket"></i>
+                        Start Free Trial
+                    </a>
+                    <a href="https://github.com/yourusername/sign-detection" class="btn-secondary">
+                        <i class="fab fa-github"></i>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>SignDetect AI</h4>
+                    <p>Revolutionary AI-powered traffic sign detection system for the future of transportation.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <a href="#">Features</a><br>
+                    <a href="#">Documentation</a><br>
+                    <a href="#">API Reference</a><br>
+                    <a href="#">Pricing</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#">Blog</a><br>
+                    <a href="#">Tutorials</a><br>
+                    <a href="#">Research Papers</a><br>
+                    <a href="#">Community</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <a href="mailto:contact@signdetect.ai">contact@signdetect.ai</a><br>
+                    <a href="#">Support Center</a><br>
+                    <a href="#">Schedule Demo</a><br>
+                    <a href="#">Enterprise Sales</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SignDetect AI. All rights reserved. | Built with ❤️ for safer roads.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
